@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/forget", {data:[{}],fetch:{},mutations:void 0});
