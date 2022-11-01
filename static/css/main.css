@@ -39,7 +39,7 @@ hr {
 
 /* sub NavBar */
 .bg-main {
-  background-color: #75B325;
+  background-color: var(--main-color);
 }
 
 .icon-border {
@@ -231,7 +231,7 @@ ul.nav li.dropdown:hover ul.dropdown-menu {
   color: var(--secend-color);
 }
 .contact-btn {
-  background-color: #75B325;
+  background-color: var(--main-color);
   border-radius: 25px;
   color: #fff;
   padding: 5px 20px;
@@ -256,7 +256,7 @@ ul.nav li.dropdown:hover ul.dropdown-menu {
 .service-btn {
   background-color: #d2eefa;
   border-radius: 25px;
-  color: #75B325;
+  color: var(--main-color);
   font-weight: bold;
   padding: 5px 20px;
 }
@@ -362,7 +362,7 @@ ul.nav li.dropdown:hover ul.dropdown-menu {
   -webkit-animation: border-transform 15s infinite ease-in-out;
   animation: border-transform 15s infinite ease-in-out;
   
-  background-image: linear-gradient(#e8f3d7,#75B325);
+  background-image: var(--main-background);
 }
 .clients-slider-content .svg {
   border-radius: 50px;
@@ -370,7 +370,7 @@ ul.nav li.dropdown:hover ul.dropdown-menu {
   height: 70px;
   line-height: 70px;
   font-size: 40px;
-  background-color: #75B325;
+  background-color: var(--main-color);
   color: #fff;
   text-align: center;
   display: inline-block;
@@ -397,7 +397,7 @@ ul.nav li.dropdown:hover ul.dropdown-menu {
 
 .clients-slider-content h3 {
   margin-bottom: 7px;
-  color: #75B325;
+  color: var(--main-color);
 }
 
 .clients-slider-content p {
@@ -573,7 +573,7 @@ ul.nav li.dropdown:hover ul.dropdown-menu {
 }
 
 .footer-icon:hover {
-  background-color: #75B325;
+  background-color: var(--main-color);
 }
 .icons:hover {
   color: #fff;

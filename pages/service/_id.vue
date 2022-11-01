@@ -29,8 +29,18 @@ import AppServiceSideArchive from '../../components/service/AppServiceSideArchiv
 import AppServiceSideServices from '../../components/service/AppServiceSideServices.vue'
 import AppServiceSideTags from '../../components/service/AppServiceSideTags.vue'
 export default {
+  name: 'Service',
   components: { AppServiceHeading, AppServiceBody, AppServiceSideServices, AppServiceSideTags, AppServiceGallery, AppServiceSideArchive },
-    name: 'Service'
+  async asyncData({ $axios }) {
+    const serviceDetails = {}
+    const SERVICE_DETAILS = await $axios.get('/services');
+
+    if (SERVICE_DETAILS.success) serviceDetails = SERVICE_DETAILS.data.data
+
+    return {
+        serviceDetails
+    }
+  },
 
 }
 </script>
